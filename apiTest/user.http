@@ -1,0 +1,52 @@
+
+# post http://127.0.0.1:5000/accounts/all/user
+# Content-Type: application/json
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im05OWsxMEBnLmNvbSIsImlkIjoiNjFhNGE3ZmViNTVlMjBjNWM2OTVlOWJmIiwiaWF0IjoxNjM4MTg3MTk0LCJleHAiOjE2MzgyMjMxOTR9.Q19-qVE0xtDj4dG8GfkoULUI8KCYEjxSAKhDqd1HStE
+
+# {
+#     "page":1,
+#     "limit":1
+# }
+
+# post http://127.0.0.1:5000/accounts/register
+# Content-Type: application/json
+
+# {
+#     "email":"m99k10@g.com",
+#     "first_name":"m",
+#     "last_name":"k",
+#     "mobile_no":"7741016480",
+#     "address":"address",
+#     "password":"123"
+# }
+
+
+# post http://127.0.0.1:5000/accounts/login
+# Content-Type: application/json
+
+# {
+#     "email":"m99k10@g.com",
+#     "password":"123"
+# }
+
+
+# put http://127.0.0.1:5000/accounts/update/user
+# Content-Type: application/json
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im05OWsxMEBnLmNvbSIsImlkIjoiNjFhNGE3ZmViNTVlMjBjNWM2OTVlOWJmIiwiaWF0IjoxNjM4MTg3MTk0LCJleHAiOjE2MzgyMjMxOTR9.Q19-qVE0xtDj4dG8GfkoULUI8KCYEjxSAKhDqd1HStE
+
+# {
+#     "first_name":"jay",
+#     "email":"m99k10@g.com"
+# }
+
+
+post http://127.0.0.1:5000/accounts/filter/user
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im05OWsxMEBnLmNvbSIsImlkIjoiNjFhNGE3ZmViNTVlMjBjNWM2OTVlOWJmIiwiaWF0IjoxNjM4MTg3MTk0LCJleHAiOjE2MzgyMjMxOTR9.Q19-qVE0xtDj4dG8GfkoULUI8KCYEjxSAKhDqd1HStE
+
+{
+    
+    "page":0,
+    "limit":1,
+    "first_name":"jay"
+}
