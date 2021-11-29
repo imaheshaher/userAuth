@@ -42,7 +42,11 @@ module.exports.getAllUser = async(req,res) => {
     return res.json({
         "status":true,
         "message":"User Listed Succssefully",
-        "data":data
+        "data":{
+            "data":data,
+            "page":page,
+            "limit":limit
+        }
     })
 }
 
@@ -102,7 +106,11 @@ module.exports.searchUser = async(req,res) => {
  return res.json({
      "status":true,
      "message":"User Filtered successfully",
-     "data":userData
+     "data":{
+         "data":userData,
+         "page":page,
+         "limit":limit
+     }
  })
  
 }
